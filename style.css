@@ -84,17 +84,24 @@
     margin-top: 20px;
     flex-wrap: wrap;
   }
-  .card {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    flex: 1 1 200px;
-    transition: transform 0.3s, background 0.3s;
-  }
+.card {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+}
+
   .card:hover {
-    background-color: #e0f7fa;
     transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(47, 214, 243, 0.15);
+    background: #338fff6b;
   }
   
   .about {
@@ -121,28 +128,81 @@
   }
   
   @media (max-width: 500px) {
-    .hero-content {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-image img {
-      width: 200px;
-      height: 200px;
-      margin-top: 20px;
-    }
-    nav ul {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-    .cards {
-      flex-direction: column;
-      align-items: center;
-      height: 50px;
-      display: grid;
-    }
-    footer {
-        margin: 120px 0 0;
-    }
+  body {
+    font-size: 16px;
   }
+
+  header {
+    padding: 10px 0;
+  }
+
+  .nav-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .hero-image img {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .services {
+    background-color: #f4f4f4;
+    padding: 30px 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 15px;
+    padding: 15px;
+  }
+
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .about p {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 1.5;
+  }
+
+  footer {
+    font-size: 14px;
+    text-align: center;
+    margin: 60px 0 0;
+    padding: 15px 0;
+  }
+}
+
   
